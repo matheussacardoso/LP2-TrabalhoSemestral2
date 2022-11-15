@@ -19,7 +19,6 @@ public class Atendimento implements Serializable{
     @Column(name="ATENDIMENTO_ID")
     private long id;
     
-    private long ATENDIMENTO_ID;
     private long AGENDAMENTO_ID;
     private String FEEDBACK;
     private long STATUS;
@@ -39,20 +38,6 @@ public class Atendimento implements Serializable{
      */
     public void setId(long id) {
         this.id = id;
-    }
-
-    /**
-     * @return long return the ATENDIMENTO_ID
-     */
-    public long getATENDIMENTO_ID() {
-        return ATENDIMENTO_ID;
-    }
-
-    /**
-     * @param ATENDIMENTO_ID the ATENDIMENTO_ID to set
-     */
-    public void setATENDIMENTO_ID(long ATENDIMENTO_ID) {
-        this.ATENDIMENTO_ID = ATENDIMENTO_ID;
     }
 
     /**

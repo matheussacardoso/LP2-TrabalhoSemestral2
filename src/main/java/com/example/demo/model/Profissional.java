@@ -19,13 +19,9 @@ public class Profissional implements Serializable{
     @Column(name="PROFISSIONAL_ID")
     private long id;
     
-    private long PROFISSIONAL_ID;
     private String NOME;
     private String DT_NASCIMENTO;
     private String CPF;
-
-    
-
 
     /**
      * @return long return the id
@@ -39,20 +35,6 @@ public class Profissional implements Serializable{
      */
     public void setId(long id) {
         this.id = id;
-    }
-
-    /**
-     * @return long return the PROFISSIONAL_ID
-     */
-    public long getPROFISSIONAL_ID() {
-        return PROFISSIONAL_ID;
-    }
-
-    /**
-     * @param PROFISSIONAL_ID the PROFISSIONAL_ID to set
-     */
-    public void setPROFISSIONAL_ID(long PROFISSIONAL_ID) {
-        this.PROFISSIONAL_ID = PROFISSIONAL_ID;
     }
 
     /**

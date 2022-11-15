@@ -26,8 +26,6 @@ public class Agendamento implements Serializable {
     private String DT_MARCADA;
     private String AVISO;
     
-
-
     /**
      * @return long return the id
      */

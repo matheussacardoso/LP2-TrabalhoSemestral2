@@ -19,8 +19,6 @@ public class Email implements Serializable{
     @Column(name="EMAIL_ID")
     private long id;
     
-    private long CLIENTE_ID;
-
     private String EMAIL;
 
     /**
@@ -35,20 +33,6 @@ public class Email implements Serializable{
      */
     public void setEMAIL_ID(long EMAIL_ID) {
         this.id = EMAIL_ID;
-    }
-
-    /**
-     * @return long return the CLIENTE_ID
-     */
-    public long getCLIENTE_ID() {
-        return CLIENTE_ID;
-    }
-
-    /**
-     * @param CLIENTE_ID the CLIENTE_ID to set
-     */
-    public void setCLIENTE_ID(long CLIENTE_ID) {
-        this.CLIENTE_ID = CLIENTE_ID;
     }
 
     /**

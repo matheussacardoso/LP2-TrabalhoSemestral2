@@ -19,14 +19,11 @@ public class Funcionario implements Serializable{
     @Column(name="FUNCIONARIO_ID")
     private long id;
     
-    private long FUNCIONARIO_ID;
     private String NOME;
     private String DT_NASCIMENTO;
     private String CPF;
     private String SENHA;
     
-
-
     /**
      * @return long return the id
      */
@@ -39,20 +36,6 @@ public class Funcionario implements Serializable{
      */
     public void setId(long id) {
         this.id = id;
-    }
-
-    /**
-     * @return long return the FUNCIONARIO_ID
-     */
-    public long getFUNCIONARIO_ID() {
-        return FUNCIONARIO_ID;
-    }
-
-    /**
-     * @param FUNCIONARIO_ID the FUNCIONARIO_ID to set
-     */
-    public void setFUNCIONARIO_ID(long FUNCIONARIO_ID) {
-        this.FUNCIONARIO_ID = FUNCIONARIO_ID;
     }
 
     /**
