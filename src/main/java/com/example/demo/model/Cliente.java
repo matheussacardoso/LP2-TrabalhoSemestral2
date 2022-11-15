@@ -39,7 +39,7 @@ public class Cliente implements Serializable {
     
     private String nome;
     
-    private LocalDate DT_NASCIMENTO;
+    private String DT_NASCIMENTO;
     private String INSTAGRAM;
     private String PROFISSAO;
 
@@ -146,14 +146,14 @@ public class Cliente implements Serializable {
     /**
      * @return String return the DT_NASCIMENTO
      */
-    public LocalDate getDT_NASCIMENTO() {
+    public String getDT_NASCIMENTO() {
         return DT_NASCIMENTO;
     }
 
     /**
      * @param DT_NASCIMENTO the DT_NASCIMENTO to set
      */
-    public void setDT_NASCIMENTO(LocalDate DT_NASCIMENTO) {
+    public void setDT_NASCIMENTO(String DT_NASCIMENTO) {
         this.DT_NASCIMENTO = DT_NASCIMENTO;
     }
 
