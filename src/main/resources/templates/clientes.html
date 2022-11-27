@@ -4,13 +4,16 @@
 <head>
 	<title>Controle de clientes</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
+	<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
 </head>
 
 <body>
 	<div class="container-fluid text-center">
 		<div>
 			<h1>Controle de clientes</h1>
+		</div>
+		<div class="m-2">
+			<a class="h3" th:href="@{/clientes/new}">Adicionar novo usuário </a>
 		</div>
 		<div>
 			<table class="table table-bordered">
@@ -31,6 +34,10 @@
 							<td>[[${cliente.dt_nascimento}]]</td>
 							<td>[[${cliente.instagram}]]</td>
 							<td>[[${cliente.profissao}]]</td>
+							<td>
+								<a class = "h4 mr-3" th:ref="@{'clientes/edit/' + ${cliente.id}}">Editar</a>
+								<a class = "h4" th:ref="@{'clientes/delete/' + ${cliente.id}}">Deletar</a>
+							</td>
 						</tr>
 					</th:block>
 				</tbody>
