@@ -41,12 +41,24 @@ public class Cliente implements Serializable {
 	@OneToMany(mappedBy = "cliente")
 	private List<Agendamento> agendamento;
 
+	//OLHAR SOBRE A NECESSIDADE DOS CONSTRUTORES
 	@Deprecated
 	public Cliente() {
 	}
 
-	public Cliente(String nome) {
+	public Cliente(String nome, String dt_nascimento, String instagram, String profissao) {
 		this.nome = nome;
+		this.dt_nascimento = dt_nascimento;
+		this.instagram = instagram;
+		this.profissao = profissao;
+	}
+
+	public Long getCliente_id() {
+		return cliente_id;
+	}
+
+	public void setCliente_id(Long cliente_id) {
+		this.cliente_id = cliente_id;
 	}
 
 	public String getNome() {

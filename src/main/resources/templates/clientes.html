@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Controlar clientes</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<div class="container-fluid text-center">
+		<div>
+			<h1>Controle de clientes</h1>
+		</div>
+		<div>
+			<table>
+				<thead>
+					<tr>
+						<th>cliente_id</th>
+						<th>nome</th>
+						<th>dt_nascimento</th>
+						<th>instagram</th>
+						<th>profissao</th>
+					</tr>
+				</thead>
+				<tbody>
+					<th:block th:each="cliente : ${listClientes}">
+						<tr>
+							<td>[[${cliente.cliente_id}]]</td>
+							<td>[[${cliente.nome}]]</td>
+							<td>[[${cliente.dt_nascimento}]]</td>
+							<td>[[${cliente.instagram}]]</td>
+							<td>[[${cliente.profissao}]]</td>
+						</tr>
+					</th:block>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+
+</html>
