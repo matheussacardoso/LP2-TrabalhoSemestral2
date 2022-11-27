@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
 
 <head>
-	<title>Controlar clientes</title>
+	<title>Controle de clientes</title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
 </head>
 
 <body>
@@ -12,8 +13,8 @@
 			<h1>Controle de clientes</h1>
 		</div>
 		<div>
-			<table>
-				<thead>
+			<table class="table table-bordered">
+				<thead class="thead-light">
 					<tr>
 						<th>cliente_id</th>
 						<th>nome</th>
