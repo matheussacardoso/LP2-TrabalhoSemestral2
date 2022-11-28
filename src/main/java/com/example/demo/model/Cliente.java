@@ -1,6 +1,7 @@
 package com.example.demo.model;
 
 import java.io.Serializable;
+import java.util.Date;
 import java.util.List;
 
 import javax.persistence.Column;
@@ -22,7 +23,7 @@ public class Cliente implements Serializable {
 	private Long cliente_id;
 	@Column
 	private String nome;
-	private String dt_nascimento;
+	private Date dt_nascimento;
 	private String instagram;
 	private String profissao;
 
@@ -41,17 +42,19 @@ public class Cliente implements Serializable {
 	@OneToMany(mappedBy = "cliente")
 	private List<Agendamento> agendamento;
 
+	/*
 	//OLHAR SOBRE A NECESSIDADE DOS CONSTRUTORES
 	@Deprecated
 	public Cliente() {
 	}
-
+	
 	public Cliente(String nome, String dt_nascimento, String instagram, String profissao) {
 		this.nome = nome;
 		this.dt_nascimento = dt_nascimento;
 		this.instagram = instagram;
 		this.profissao = profissao;
 	}
+	*/
 
 	public Long getCliente_id() {
 		return cliente_id;
@@ -69,11 +72,11 @@ public class Cliente implements Serializable {
 		this.nome = nome;
 	}
 
-	public String getDt_nascimento() {
+	public Date getDt_nascimento() {
 		return dt_nascimento;
 	}
 
-	public void setDt_nascimento(String dt_nascimento) {
+	public void setDt_nascimento(Date dt_nascimento) {
 		this.dt_nascimento = dt_nascimento;
 	}
 

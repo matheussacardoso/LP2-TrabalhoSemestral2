@@ -35,8 +35,8 @@
 							<td>[[${cliente.instagram}]]</td>
 							<td>[[${cliente.profissao}]]</td>
 							<td>
-								<a class = "h4 mr-3" th:ref="@{'clientes/edit/' + ${cliente.id}}">Editar</a>
-								<a class = "h4" th:ref="@{'clientes/delete/' + ${cliente.id}}">Deletar</a>
+								<a class = "h4 mr-3" th:href="@{'/clientes/edit/' + ${cliente.cliente_id}}">Editar</a>
+								<a class = "h4" th:href="@{'/clientes/delete/' + ${cliente.cliente_id}}">Deletar</a>
 							</td>
 						</tr>
 					</th:block>

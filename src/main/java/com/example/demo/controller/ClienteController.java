@@ -21,5 +21,12 @@ public class ClienteController {
 		model.addAttribute("listClientes", listClientes);
 		return "clientes";
 	}
+	
+	@GetMapping("/clientes/new")
+	public String showNewForm(Model model) {
+		model.addAttribute("cliente",new Cliente());
+		return "cliente_form";
+	}
+	
 
 }
