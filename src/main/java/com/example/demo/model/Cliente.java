@@ -12,6 +12,8 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 @Entity
 @Table
 public class Cliente implements Serializable {
@@ -23,6 +25,7 @@ public class Cliente implements Serializable {
 	private Long cliente_id;
 	@Column
 	private String nome;
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private LocalDate dt_nascimento;
 	private String instagram;
 	private String profissao;
