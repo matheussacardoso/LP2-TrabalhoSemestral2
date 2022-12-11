@@ -29,6 +29,7 @@ public class ClienteController {
 	@GetMapping("/clientes/new")
 	public String showNewForm(Model model) {
 		model.addAttribute("cliente", new Cliente());
+		model.addAttribute("pageTitle", "Adicionar novo cliente");
 		return "cliente_form";
 	}
 
@@ -46,13 +47,29 @@ public class ClienteController {
 		try {
 			Cliente cliente = service.get(id);
 			model.addAttribute("cliente", cliente);
-			return "clinte_form";
+			model.addAttribute("pageTitle", "Editar usuário (ID: " + id + ")");
+			return "cliente_form";
 		} catch (ClienteNotFoundException e) {
-			ra.addFlashAttribute("message", "O cliente foi adicionado com sucesso!");
+			ra.addFlashAttribute("message", e.getMessage());
 			e.printStackTrace();
 			return "redirect:/clientes";
 		}
 
 	}
+
+	/*
+	@GetMapping("/clientes/delete/{id}")
+	public String deleteUser(@PathVariable("id") Integer id, RedirectAttributes ra) {
+
+		try {
+			service.delete(id);
+			ra.addFlashAttribute("message", "O usuário com o id: " + id + " foi deletado do banco.");
+		} catch (ClienteNotFoundException e) {
+			ra.addFlashAttribute("message", e.getMessage());
+			e.printStackTrace();
+		}
+		return "redirect:/clientes";
+	}
+	*/
 
 }

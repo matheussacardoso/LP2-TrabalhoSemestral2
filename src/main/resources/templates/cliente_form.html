@@ -2,7 +2,7 @@
 <html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
 
 <head>
-	<title>Novo cliente</title>
+	<title>[[${pageTitle}]]</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
 </head>
@@ -10,12 +10,13 @@
 <body>
 	<div class="container-fluid">
 		<div class="text-center">
-			<h2>Novo cliente</h2>
+			<h2>[[${pageTitle}]]</h2>
 		</div>
 
 		<form th:action="@{/clientes/save}" method="post" th:object="${cliente}"
 			style="max-width: 500px; margin: 0 auto;">
 
+			<input type="hidden" th:field="*{cliente_id}">
 			<div class="border border-secondary rounded p-3">
 				<div class="form-group row">
 					<label class="col-sm-4 col-form-label">Nome:</label>

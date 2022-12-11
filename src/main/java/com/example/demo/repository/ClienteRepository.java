@@ -6,5 +6,10 @@ import com.example.demo.model.Cliente;
 
 public interface ClienteRepository extends JpaRepository<Cliente, Long> {
 
-	Cliente findById(long id);
+	Cliente findById(long id_cliente);
+
+	/*
+	public Long countById(long id_cliente);
+	*/
+
 }
