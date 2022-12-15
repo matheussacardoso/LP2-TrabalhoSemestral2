@@ -26,5 +26,7 @@ O segundo pacote foi o service, o qual pertence à camada de serviço da aplica�
 
 ##Referências
 [7] https://tableless.com.br/mvc-afinal-e-o-que/  (O que é MVC?)
+
 [8] https://www.devmedia.com.br/jpa-e-hibernate-acessando-dados-em-aplicacoes-java/32711 (JPA e Hibernate: Acessando dados em aplicações Java)
+
 [9] https://blog.algaworks.com/spring-data-jpa/ (O que é Spring Data JPA?)
