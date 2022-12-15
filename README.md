@@ -14,15 +14,16 @@ Ou seja, é uma maneira mais organizada de construir aplicações web. Vale ress
 
 No projeto foi aplicado isso por meio do Spring Boot, framework Java Open Source com foco em aplicações web. Levando em conta o padrão MVC, criamos 3 pacotes: Model, View e Controller.
 
-O pacote Model possui as classes Java com os objetos que serão criados ao longo da aplicação. Nessas classes, esses objetos se transformarão em uma tabela com a utilização de uma dependência chamada JPA. “Ela é um framework ORM (Mapeamento Objeto-Relacional), responsável por abstrair um banco de dados relacional, permitindo que você trabalhe como se fosse um banco de dados orientado a objetos[8].”
+1. O pacote Model possui as classes Java com os objetos que serão criados ao longo da aplicação. Nessas classes, esses objetos se transformarão em uma tabela com a utilização de uma dependência chamada JPA. “Ela é um framework ORM (Mapeamento Objeto-Relacional), responsável por abstrair um banco de dados relacional, permitindo que você trabalhe como se fosse um banco de dados orientado a objetos[8].”
 
-O pacote View (representado pela src/main/resources) possui páginas HTML com o intuito de exibir todas as informações necessárias para que o usuário possa utilizar a aplicação. No projeto, foi utilizado conceitos de interação humano-máquina para construir interfaces que fossem de fácil uso e coesas.
+2. O pacote View (representado pela src/main/resources) possui páginas HTML com o intuito de exibir todas as informações necessárias para que o usuário possa utilizar a aplicação. No projeto, foi utilizado conceitos de interação humano-máquina para construir interfaces que fossem de fácil uso e coesas.
 O pacote Controller possui todos métodos get e post da aplicação que servem, principalmente, para enviar dados ou consultar dados do banco por meio de requisições HTTP.
 
 Além disso, foram criados 2 pacotes para funcionamento da integração entre o banco e a aplicação. 
-O primeiro foi o pacote repository, responsável pela criação de consultas a partir de uma interface chamada JPAREPOSITORY, onde possui várias funções para criar as consultas [9].
 
-O segundo pacote foi o service, o qual pertence à camada de serviço da aplicação.
+1. O primeiro foi o pacote repository, responsável pela criação de consultas a partir de uma interface chamada JPAREPOSITORY, onde possui várias funções para criar as consultas [9].
+
+2. O segundo pacote foi o service, o qual pertence à camada de serviço da aplicação.
 
 ## REFERÊNCIAS
 [7] https://tableless.com.br/mvc-afinal-e-o-que/  (O que é MVC?)
