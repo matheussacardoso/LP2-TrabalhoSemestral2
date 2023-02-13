@@ -58,4 +58,17 @@ public class ClienteController {
 
 	}
 
+	@GetMapping("/count")
+	public String ClienteNum(){
+		System.out.println(service.getClienteCount());
+		return "index";
+	}
+
+	@GetMapping("/countN")
+	public String ClienteNumFunc(){
+		System.out.println(service.getClienteNum());
+		return "index";
+	}
+	
+
 }
